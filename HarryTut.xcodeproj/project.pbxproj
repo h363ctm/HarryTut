@@ -16,6 +16,15 @@
 		0138D2F71FEA84990003F322 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D2F61FEA84990003F322 /* Renderer.swift */; };
 		0138D2F91FEA849D0003F322 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0138D2F81FEA849D0003F322 /* Shaders.metal */; };
 		0138D2FB1FEA84A10003F322 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D2FA1FEA84A10003F322 /* MetalView.swift */; };
+		0138D2FD1FEA85C60003F322 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D2FC1FEA85C60003F322 /* Types.swift */; };
+		0138D3051FEA87630003F322 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3011FEA87630003F322 /* Node.swift */; };
+		0138D3061FEA87630003F322 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3021FEA87630003F322 /* Plane.swift */; };
+		0138D3071FEA87630003F322 /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3031FEA87630003F322 /* Primitive.swift */; };
+		0138D3081FEA87630003F322 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3041FEA87630003F322 /* Triangle.swift */; };
+		0138D3121FEA87AD0003F322 /* Maths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3111FEA87AD0003F322 /* Maths.swift */; };
+		0138D3161FEA87B90003F322 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3131FEA87B90003F322 /* Scene.swift */; };
+		0138D3171FEA87B90003F322 /* TempScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3141FEA87B90003F322 /* TempScene.swift */; };
+		0138D3181FEA87B90003F322 /* BasicScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D3151FEA87B90003F322 /* BasicScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		0138D2F61FEA84990003F322 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		0138D2F81FEA849D0003F322 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		0138D2FA1FEA84A10003F322 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		0138D2FC1FEA85C60003F322 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		0138D3011FEA87630003F322 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		0138D3021FEA87630003F322 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		0138D3031FEA87630003F322 /* Primitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primitive.swift; sourceTree = "<group>"; };
+		0138D3041FEA87630003F322 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		0138D3111FEA87AD0003F322 /* Maths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maths.swift; sourceTree = "<group>"; };
+		0138D3131FEA87B90003F322 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		0138D3141FEA87B90003F322 /* TempScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempScene.swift; sourceTree = "<group>"; };
+		0138D3151FEA87B90003F322 /* BasicScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +119,13 @@
 		0138D2C01FEA82080003F322 /* HarryTut */ = {
 			isa = PBXGroup;
 			children = (
+				0138D2FE1FEA86FE0003F322 /* Maths */,
+				0138D2FF1FEA87030003F322 /* Scene */,
+				0138D3001FEA870B0003F322 /* Node */,
 				0138D2FA1FEA84A10003F322 /* MetalView.swift */,
-				0138D2F81FEA849D0003F322 /* Shaders.metal */,
 				0138D2F61FEA84990003F322 /* Renderer.swift */,
-				0138D2C81FEA82080003F322 /* Assets.xcassets */,
+				0138D2F81FEA849D0003F322 /* Shaders.metal */,
+				0138D2FC1FEA85C60003F322 /* Types.swift */,
 				0138D2CD1FEA82080003F322 /* Info.plist */,
 				0138D2F51FEA82E70003F322 /* other */,
 			);
@@ -132,11 +153,41 @@
 		0138D2F51FEA82E70003F322 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				0138D2C81FEA82080003F322 /* Assets.xcassets */,
 				0138D2CA1FEA82080003F322 /* LaunchScreen.storyboard */,
 				0138D2C51FEA82080003F322 /* Main.storyboard */,
 				0138D2C11FEA82080003F322 /* AppDelegate.swift */,
 			);
 			path = other;
+			sourceTree = "<group>";
+		};
+		0138D2FE1FEA86FE0003F322 /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				0138D3111FEA87AD0003F322 /* Maths.swift */,
+			);
+			path = Maths;
+			sourceTree = "<group>";
+		};
+		0138D2FF1FEA87030003F322 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0138D3151FEA87B90003F322 /* BasicScene.swift */,
+				0138D3131FEA87B90003F322 /* Scene.swift */,
+				0138D3141FEA87B90003F322 /* TempScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		0138D3001FEA870B0003F322 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				0138D3011FEA87630003F322 /* Node.swift */,
+				0138D3021FEA87630003F322 /* Plane.swift */,
+				0138D3031FEA87630003F322 /* Primitive.swift */,
+				0138D3041FEA87630003F322 /* Triangle.swift */,
+			);
+			path = Node;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +326,17 @@
 			files = (
 				0138D2F91FEA849D0003F322 /* Shaders.metal in Sources */,
 				0138D2FB1FEA84A10003F322 /* MetalView.swift in Sources */,
+				0138D3181FEA87B90003F322 /* BasicScene.swift in Sources */,
 				0138D2F71FEA84990003F322 /* Renderer.swift in Sources */,
+				0138D3081FEA87630003F322 /* Triangle.swift in Sources */,
+				0138D3071FEA87630003F322 /* Primitive.swift in Sources */,
+				0138D3051FEA87630003F322 /* Node.swift in Sources */,
+				0138D2FD1FEA85C60003F322 /* Types.swift in Sources */,
+				0138D3121FEA87AD0003F322 /* Maths.swift in Sources */,
 				0138D2C21FEA82080003F322 /* AppDelegate.swift in Sources */,
+				0138D3061FEA87630003F322 /* Plane.swift in Sources */,
+				0138D3171FEA87B90003F322 /* TempScene.swift in Sources */,
+				0138D3161FEA87B90003F322 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
